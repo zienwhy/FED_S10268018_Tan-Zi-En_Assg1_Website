@@ -453,3 +453,32 @@
     width: 100%;
     margin-top: 35px;
   }
+
+  /* Style the about-me.html  */
+.about-keshi {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .keshi-info {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    font-size: 2vw; /* Set font size to scale with viewport width */
+  } 
+  .keshi-info img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .keshi-info {
+      flex-basis: 100%; /* Make the flex item take full width */
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    #info3 {
+      order: -1; /* Move the image above the content when in mobile view */
+    }
+  }

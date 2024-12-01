@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutPage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start of header -->
+    <header>
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo"><a href="#"><img src="Images/keshi-logo.webp" alt="Company Logo"></a></div>
+        <!-- Hamburger menu icon for mobile view -->
+        <img src="Images/hamburger.png" alt="Menu Icon" class="menu-icon" id="menu-icon" onclick="showSidebar()">
+        <!-- Sidebar menu for mobile view -->
+        <div class="sidebar" id="sidebar">
+          <ul>
+            <!-- Close icon for sidebar -->
+            <li onclick="hideSidebar()"><a href="#"><img src="Images/close.png" class="close-menu" alt="Close Icon"></a></li>
+            <!-- Navigation links -->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+          </ul>
+        </div>
+        <!-- Navigation links for desktop view -->
+        <div class="navdiv" id="navdiv">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- End of header -->
+
+    <!-- Start of Main content -->
+    <main>
+      <!-- First article about Keshi -->
+      <article class="about-keshi">
+        <div class="keshi-info">
+          <!-- Image of Keshi -->
+          <img src="Images/thereaper.jpg" alt="Keshi Image">
+        </div>
+        <div class="keshi-info">
+          <!-- Biography of Keshi -->
+          <p>Casey Luong (born November 4, 1994), known 
+            professionally as Keshi (stylized as keshi), is an 
+            American singer, songwriter, and record producer.
+            Recognized for his distinctive blend of lo-fi 
+            hip-hop, R&B, and indie influences, Keshi has 
+            garnered a global fanbase with his introspective
+            lyrics and atmospheric soundscapes.
+
+            Born and raised in Houston, Texas, Keshi developed
+            an early interest in music, teaching himself to play
+            guitar at the age of 13. Inspired by artists such as 
+            John Mayer and Ed Sheeran, he began writing songs
+            during his teenage years, often sharing his music 
+            with friends and family. Despite his passion, Keshi 
+            initially pursued a career as a registered nurse after 
+            graduating from the University of Texas at Austin.
+          </p>
+        </div>
+      </article>
+
+      <!-- Second article about Keshi -->
+      <article class="about-keshi">
+        <div class="keshi-info" id="info2">
+          <!-- Biography of Keshi -->
+          <p>While working as a nurse, Keshi turned to music
+            as a creative outlet, producing and recording songs 
+            in his bedroom studio. He uploaded these tracks to 
+            SoundCloud under the name "keshi," a childhood 
+            nickname given by his fiancée. His early releases, 
+            characterized by lo-fi beats and melancholic vocals,
+            quickly gained traction online, earning him a loyal 
+            following and recognition within the underground 
+            music community.
+            
+            Keshi’s decision to leave his nursing career to pursue
+            music full-time marked a pivotal moment in his life.
+            His breakout EPs, including Skeletons (2019) and 
+            Band-Aids (2020), showcased his unique sound and 
+            cemented his status as a rising artist in the 
+            alternative R&B scene.
+          </p>
+        </div>
+        <div class="keshi-info" id="info3">
+          <!-- Image of Keshi -->
+          <img src="Images/keshi.webp" alt="Keshi Image">
+        </div>
+      </article>
+
+      <!-- Third article about Keshi -->
+      <article class="about-keshi">
+        <div class="keshi-info">
+          <!-- Image of Keshi -->
+          <img src="Images/keshi-2.jpg" alt="Keshi Image">
+        </div>
+        <div class="keshi-info">
+          <!-- Biography of Keshi -->
+          <p>In March 2022, Keshi released his debut studio 
+            album, Gabriel, to critical acclaim, solidifying his 
+            reputation as a versatile artist and storyteller. His 
+            music often explores themes of love, heartbreak, 
+            and personal growth, delivered with emotive vocals
+            and minimalist production.
+            
+            In addition to his music, Keshi has achieved 
+            significant commercial success, including sold-out 
+            tours and a dedicated online following. 
+            Known for his hands-on approach to production 
+            and songwriting, Keshi continues to push creative 
+            boundaries, influencing a new generation of artists.
+          </p>
+        </div>
+      </article>
+    </main>
+    <!-- End of Main content -->
+
+    <!-- Start of Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+          <p>© Front End Development - Wireframe</p>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="social-media">
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="spotify-icon.png" alt="Spotify"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
