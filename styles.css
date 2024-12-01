@@ -1,724 +1,729 @@
 /* Apply a global font style and weight to all elements */
 * {
-    font-family: 'Quattrocento', serif;
-    font-weight: bold;
-  }
+  font-family: 'Quattrocento', serif;
+  font-weight: bold;
+}
+
+/* Style the Navigation Bar */
+/* General reset for text decoration in navigation links */
+.nav a {
+  text-decoration: none;
+}
+
+/* Style the logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the logo */
+}
+
+/* Style the logo image */
+.logo img {
+  align-items: center;
+  margin-bottom: 10px; 
+  width: 100px; 
+  height: auto;
+  display: block;
+}
+
+/* Style the navigation container */
+.navdiv {
+  background-color: black; 
+  list-style-type: none; /* Remove default list styles */
+  text-align: center; 
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  justify-content: center; /* Center the nav items */
+  align-items: center; 
+}
+
+
+
+/* Style the navigation list */
+.navdiv ul {
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute space between list items */
+  width: 100%; 
+}
+
+/* Style the navigation list items */
+.navdiv li {
+  color: white; 
+  display: inline-block; /* Display items inline */
+  font-size: 20px; /* Set font size */
+  padding: 20px; 
+}
+
+/* Style the navigation links */
+.navdiv li a {
+  color: white;
+  text-decoration: none; /* Ensure no text decoration */
+  padding: 14px 16px; /* Add padding to the links for decoration*/
+  background-color: black; 
+}
+
+/* Add hover effect to the navigation links */
+.navdiv li a:hover {
+  background-color: #777; /* Darken the background color on hover */
+}
+
+.menu-icon{
+  display: none; /* Hide the menu icon by default */
+  top : 0; /* Position the icon at the top right*/
+  right : 0;
+  position: fixed; /* Fix the icon in place to create a sticky navbar */
+  height: 37.656px;
+  width: auto;
+  margin-right:10px;
+  margin-top: 10px;
+  z-index: 998; /* Ensure the icon stays above other content */
+}
+
+.sidebar{
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: black;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar li {
+  list-style-type: none; 
+  width: 100%;
+  margin-bottom: 15px; /* Add space between items */
+}
+
+.sidebar a {
+  text-decoration: none;
+  width: 100%;
+  color: white; 
+  font-size: 18px; 
+  padding: 10px 15px; 
+  display: block; /* Make the links block elements */
+}
+
+.sidebar a:hover {
+  background-color: #777; /* Light gray background on hover */
+}
+
+/* Style the music video section */
+.music-video {
+  background-color: white;
+  text-align: center; 
+  display: flex;
+  flex-direction: column; /* Ensure the content is stacked vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+.music-video h2 {
+  font-size: 28px; 
+  margin-bottom: 20px; 
+}
+
+.music-video iframe{
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* Style the latest album section */
+.latest-album {
+  align-content: space-evenly;
+  background-image: url('Images/keshi-bg.png'); /* Background image */ 
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */  
+  width: auto;
+  height: 100%;
+  color: white;
+  padding: 40px 20px; 
+  text-align: center; 
+}
+
+
+.latest-album h2 {
+  font-size: 28px; 
+  margin-bottom: 20px; 
+}
+
+.latest-album p {
+  font-size: 18px; 
+  margin-bottom: 20px; 
+}
+
+.latest-album a.button {
+  display: inline-block;
+  background-color: #ff6347; 
+  color: white; 
+  border: none; /* Remove border */
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold; /* Make text bold */
+  text-transform: uppercase; /* Transform text to uppercase */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add transition for background color */
+  text-align: center; /* Center text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for button effect */
+  text-decoration: none; /* Remove underline */
+}
+
+.latest-album a.button:hover {
+  background-color: #e5533d; /* Darken background color on hover */
+}
+
+/* Style the arrival section */
+.arrival-container {
+  max-width: 1170px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.product-container {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.slider-wrapper {
+  margin: auto; 
+  overflow: hidden; /* Hide the overflowing content */
+}
+
+.slider-container {
+  padding: 0 10px;
+}
+
+.slider-container a {
+  text-decoration: none;
+  color : black;
+}
+
+.product-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  transition: 1s;
+  max-height: calc(100vh - 80px);
+}
+
+.product {
+  background-color: white;
+  margin: 0 16px -4px 0;
+  min-height: 150px;
+}
+
+.product p {
+  margin-top: 0;
+}
+
+.product img {
+  width: 100%;
+}
+
+.slider-arrows {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0 10px;
+  margin-top: 10px;
+  position: absolute; /* Position the arrows relative to the slider */
+  top: 40%;
+  transform: translateY(-50%); /* Center the arrows vertically */
+  width: 100%;
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+.slider-arrow-prev,
+.slider-arrow-next {
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  pointer-events: auto; /* Enables clicks on buttons */
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  cursor: pointer; 
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  /* Style the Navigation Bar */
-  /* General reset for text decoration in navigation links */
-  .nav a {
-    text-decoration: none;
-  }
-  
-  /* Style the logo container */
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center the logo */
-  }
-  
-  /* Style the logo image */
-  .logo img {
-    align-items: center;
-    margin-bottom: 10px; 
-    width: 100px; 
-    height: auto;
-    display: block;
-  }
-  
-  /* Style the navigation container */
-  .navdiv {
-    background-color: black; 
-    list-style-type: none; /* Remove default list styles */
-    text-align: center; 
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    justify-content: center; /* Center the nav items */
-    align-items: center; 
-  }
-  
-  
-  
-  /* Style the navigation list */
-  .navdiv ul {
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-around; /* Distribute space between list items */
-    width: 100%; 
-  }
-  
-  /* Style the navigation list items */
-  .navdiv li {
-    color: white; 
-    display: inline-block; /* Display items inline */
-    font-size: 20px; /* Set font size */
-    padding: 20px; 
-  }
-  
-  /* Style the navigation links */
-  .navdiv li a {
-    color: white;
-    text-decoration: none; /* Ensure no text decoration */
-    padding: 14px 16px; /* Add padding to the links for decoration*/
-    background-color: black; 
-  }
-  
-  /* Add hover effect to the navigation links */
-  .navdiv li a:hover {
-    background-color: #777; /* Darken the background color on hover */
-  }
-  
-  .menu-icon{
-    display: none; /* Hide the menu icon by default */
-    top : 0; /* Position the icon at the top right*/
-    right : 0;
-    position: fixed; /* Fix the icon in place to create a sticky navbar */
-    height: 37.656px;
-    width: auto;
-    margin-right:10px;
-    margin-top: 10px;
-    z-index: 998; /* Ensure the icon stays above other content */
-  }
-  
-  .sidebar{
-    position: fixed;
-    display: none;
-    flex-direction: column;
-    right: 0;
-    top: 0;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: black;
-    z-index: 999;
-    height: 100vh;
-    width: 100%;
-  }
-  
-  .sidebar li {
-    list-style-type: none; 
-    width: 100%;
-    margin-bottom: 15px; /* Add space between items */
-  }
-  
-  .sidebar a {
-    text-decoration: none;
-    width: 100%;
-    color: white; 
-    font-size: 18px; 
-    padding: 10px 15px; 
-    display: block; /* Make the links block elements */
-  }
-  
-  .sidebar a:hover {
-    background-color: #777; /* Light gray background on hover */
-  }
-  
-  /* Style the music video section */
-  .music-video {
-    background-color: white;
-    text-align: center; 
-    display: flex;
-    flex-direction: column; /* Ensure the content is stacked vertically */
-    align-items: center; /* Center the content horizontally */
-  }
-  
-  .music-video h2 {
-    font-size: 28px; 
-    margin-bottom: 20px; 
-  }
-  
-  .music-video iframe{
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-  
-  /* Style the latest album section */
-  .latest-album {
-    align-content: space-evenly;
-    background-image: url('Images/keshi-bg.png'); /* Background image */ 
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */  
-    width: auto;
-    height: 100%;
-    color: white;
-    padding: 40px 20px; 
-    text-align: center; 
-  }
-  
-  
-  .latest-album h2 {
-    font-size: 28px; 
-    margin-bottom: 20px; 
-  }
-  
-  .latest-album p {
-    font-size: 18px; 
-    margin-bottom: 20px; 
-  }
-  
-  .latest-album button {
-    background-color: #ff6347; 
-    color: white; 
-    border: none; /* Remove border */
-    padding: 10px 20px; 
-    font-size: 16px; 
-    font-weight: bold; /* Make text bold */
-    text-transform: uppercase; /* Transform text to uppercase */
-    cursor: pointer; /* Change cursor on hover */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s ease; /* Add transition for background color */
-  }
-  
-  .latest-album button:hover {
-    background-color: #ff4500; /* Change background color on hover */
-  }
-  
-  /* Style the arrival section */
-  .arrival-container {
-    max-width: 1170px;
-    margin: auto;
-    text-align: center;
-  }
-  
-  
-  .product-container {
-    background-color: white;
-    height: auto;
-    width: 100%;
-    position: relative;
-  }
-  
-  .slider-wrapper {
-    margin: auto; 
-    overflow: hidden; /* Hide the overflowing content */
-  }
-  
-  .slider-container {
-    padding: 0 10px;
-  }
-  
-  .slider-container a {
-    text-decoration: none;
-    color : black;
-  }
-  
-  .product-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    overflow: hidden;
-    transition: 1s;
-    max-height: calc(100vh - 80px);
-  }
-  
-  .product {
-    background-color: white;
-    margin: 0 16px -4px 0;
-    min-height: 150px;
-  }
-  
-  .product p {
-    margin-top: 0;
-  }
-  
-  .product img {
-    width: 100%;
-  }
-  
-  .slider-arrows {
-    display: flex;
-    justify-content: space-between;
-    height: 30px;
-    padding: 0 10px;
-    margin-top: 10px;
-    position: absolute; /* Position the arrows relative to the slider */
-    top: 40%;
-    transform: translateY(-50%); /* Center the arrows vertically */
-    width: 100%;
-    pointer-events: none; /* Allows clicks to pass through */
-  }
-  
-  .slider-arrow-prev,
-  .slider-arrow-next {
-    border: none;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    pointer-events: auto; /* Enables clicks on buttons */
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white; 
-    cursor: pointer; 
-    width: 40px; 
-    height: 40px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  .slider-arrow-prev:hover,
-  .slider-arrow-next:hover {
-    background-color: #424141;
-  }
-  
-  
-  .slider-arrow-prev img,
-  .slider-arrow-next img {
-    width: 100%; 
-    height: auto;
-  }
-  
-  /* Style the shop button */
-  .index-shop {
-    background-color: #ff6347; 
-    color: white; 
-    border: none; 
-    padding: 10px 20px; 
-    font-size: 16px; 
-    font-weight: bold; 
-    text-transform: uppercase; 
-    cursor: pointer; 
-    border-radius: 5px; 
-    transition: background-color 0.3s ease; /* Add transition for background color */
-    margin-bottom: 20px; 
-  }
-  
-  .music-shop:hover {
-    background-color: #ff4500; 
-  }
-  
-  /* Style the footer */
-  .footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
+}
+
+.slider-arrow-prev:hover,
+.slider-arrow-next:hover {
+  background-color: #424141;
+}
+
+
+.slider-arrow-prev img,
+.slider-arrow-next img {
+  width: 100%; 
+  height: auto;
+}
+
+/* Style the shop button */
+.index-shop {
+  display: inline-block;
+  background-color: #ff6347; 
+  color: white; 
+  border: none; /* Remove border */
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold; /* Make text bold */
+  text-transform: uppercase; /* Transform text to uppercase */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add transition for background color */
+  text-align: center; /* Center text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for button effect */
+  text-decoration: none; /* Remove underline */
+  margin-bottom:10px ;
+}
+
+.index-shop:hover {
+  background-color: #e5533d; /* Darken background color on hover */
+}
+
+/* Style the footer */
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+  justify-content: center; 
+}
+
+.footer-links li {
+  display: inline; 
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.social-media a img {
+  width: 24px; /* Adjust the size of the social media icons */
+  height: 24px;
+}
+
+.social-media a:hover img {
+  opacity: 0.7; /* Add a hover effect to the social media icons */
+}
+
+@media screen and (max-width: 768px) {
   .footer-content {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .footer-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
-    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .footer-links li {
-    display: inline; 
-  }
-  
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-  
+
   .social-media {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap; 
-    justify-content: center; 
+    justify-content: center;
   }
-  
-  .social-media a img {
-    width: 24px; /* Adjust the size of the social media icons */
-    height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .social-media a:hover img {
-    opacity: 0.7; /* Add a hover effect to the social media icons */
+
+  .social-media {
+    justify-content: center;
   }
-  
-  @media screen and (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-links {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .social-media {
-      justify-content: center;
-    }
+  .footer-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media screen and (max-width: 768px) {
-    .footer-links {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .social-media {
-      justify-content: center;
-    }
-    .footer-content{
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-  
-    .navdiv li {
-      display: none; /* Hide the navigation links */
-    }
-    .menu-icon {
-      display: block; /* Display the menu icon */
-    }
-    .logo {
-      position: fixed;
-      width: 100%;
-      background-color: white;
-      top: 0;
-      z-index: 998; /* Ensure it stays above other content */
-    }
-    .music-video {
-      padding-top: 25px; /* Adjust padding to account for fixed navigation */
-    }
-    .music-video h2 {
-      font-size: 24px; /* Adjust font size for smaller screens */
-    }
+
+
+  .navdiv li {
+    display: none; /* Hide the navigation links */
   }
-  
-  /* Style the shop.html and music.html */
-  /* Style the row to use flexbox */
-  .row {
-    display: flex;
-    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
-    margin: 0 -8px; /* Adjust margin to compensate for padding */
+  .menu-icon {
+    display: block; /* Display the menu icon */
   }
-  
-  /* Style the columns */
+  .logo {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 998; /* Ensure it stays above other content */
+  }
+  .music-video {
+    padding-top: 25px; /* Adjust padding to account for fixed navigation */
+  }
+  .music-video h2 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Style the shop.html and music.html */
+/* Style the row to use flexbox */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  margin: 0 -8px; /* Adjust margin to compensate for padding */
+}
+
+/* Style the columns */
+.column {
+  margin-top: 8px;
+  flex: 1; /* Allow columns to grow and take available space */
+  max-width: 33.3%; /* Set the maximum width for each column */
+  padding: 0 8px; /* Add padding inside the columns */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  margin-bottom: 8px; /* Add some space below each column */
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 768px) {
   .column {
-    margin-top: 8px;
-    flex: 1; /* Allow columns to grow and take available space */
-    max-width: 33.3%; /* Set the maximum width for each column */
-    padding: 0 8px; /* Add padding inside the columns */
-    box-sizing: border-box; /* Ensure padding is included in the width */
-    margin-bottom: 8px; /* Add some space below each column */
+    max-width: 100%;
+    flex: 100%;
+    margin-top: 50px;
   }
-  
-  /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 768px) {
-    .column {
-      max-width: 100%;
-      flex: 100%;
-      margin-top: 50px;
-    }
-  }
-  
-  /* Add some shadows to create a card effect */
-  .card {
-    border: 1px solid black; /* Add a black border to each box */
-  }
-  
-  /* Some left and right padding inside the container */
-  .info-container {
-    padding: 0 16px;
-    text-align: center;
-    padding-bottom: 25px;
-  }
-  
-  .product-image img{
-    width: 100%;
-  }
-  
-  .product-price {
-    color: grey;
-  }
-  
-  .info-container button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .info-container button a {
-    text-decoration: none;
-  }
-  
-  .info-container button:hover {
-    background-color: #777;
-  }
-  
-  .cover-image img {
-    height: auto;
-    width: 100%;
-    margin-top: 35px;
-  }
-  
-  
-  
-  /* Style the about-me.html  */
-  .about-keshi {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  border: 1px solid black; /* Add a black border to each box */
+}
+
+/* Some left and right padding inside the container */
+.info-container {
+  padding: 0 16px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.product-image img{
+  width: 100%;
+}
+
+.product-price {
+  color: grey;
+}
+
+.product-link.button , .stream-now-button {
+  display: inline-block;
+  background-color: black; /* Change background color to black */
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add transition for background color */
+  text-align: center; 
+  text-decoration: none; 
+}
+
+.product-link.button:hover, .stream-now-button:hover {
+  background-color: #777; 
+}
+
+
+.cover-image img {
+  height: auto;
+  width: 100%;
+  margin-top: 35px;
+}
+
+
+
+/* Style the about-me.html  */
+.about-keshi {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.keshi-info {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  font-size: 2vw; /* Set font size to scale with viewport width */
+} 
+.keshi-info img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
   .keshi-info {
-    flex-basis: 45%;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    font-size: 2vw; /* Set font size to scale with viewport width */
-  } 
-  .keshi-info img {
-    max-width: 100%;
-    height: auto;
+    flex-basis: 100%; /* Make the flex item take full width */
+    font-size: 18px; /* Adjust font size for smaller screens */
   }
-  
-  @media screen and (max-width: 768px) {
-    .keshi-info {
-      flex-basis: 100%; /* Make the flex item take full width */
-      font-size: 18px; /* Adjust font size for smaller screens */
-    }
-    #info3 {
-      order: -1; /* Move the image above the content when in mobile view */
-    }
+  #info3 {
+    order: -1; /* Move the image above the content when in mobile view */
   }
-  
-  
-  
-  /* Style the purchase page */
-  .purchase-page {
-    display: flex;
-    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-    padding: 20px;
-    justify-content: center; /* Center the content */
-    align-items: center; /* Center the content vertically */
-  }
-  
-  /* Style the purchase info sections */
+}
+
+
+
+/* Style the purchase page */
+.purchase-page {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  padding: 20px;
+  justify-content: center; /* Center the content */
+  align-items: center; /* Center the content vertically */
+}
+
+/* Style the purchase info sections */
+.purchase-info {
+  flex-basis: 45%; /* Set the base size for the flex item */
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  font-size: 20px; /* Set font size */
+  text-align: center; /* Center the text */
+}
+
+/* Style the image inside purchase-info */
+.purchase-info img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Add some space below the image */
+}
+
+/* Style the purchase form */
+.purchase-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the form labels */
+.purchase-form label {
+  margin: 10px 0 5px;
+  font-size: 35px; /* Set font size */
+}
+
+/* Style the form select elements */
+.purchase-form select {
+  padding: 5px;
+  font-size: 20px; /* Set font size */
+  margin-bottom: 10px;
+}
+
+/* Style the quantity counter */
+.quantity-counter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.counter-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px; /* Set font size */
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+  margin: 0 5px; /* Add some space between buttons and input */
+}
+
+.counter-button:hover {
+  background-color: #777;
+}
+
+#quantity {
+  width: 50px;
+  text-align: center;
+  font-size: 30px; /* Set font size */
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Style the purchase button */
+.purchase-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px; /* Set font size */
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%; /* Make the button take full width */
+}
+
+.purchase-button:hover {
+  background-color: #777;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
   .purchase-info {
-    flex-basis: 45%; /* Set the base size for the flex item */
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    font-size: 20px; /* Set font size */
-    text-align: center; /* Center the text */
+    flex-basis: 100%; /* Make the flex item take full width */
+    font-size: 16px; /* Adjust font size */
   }
-  
-  /* Style the image inside purchase-info */
-  .purchase-info img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px; /* Add some space below the image */
-  }
-  
-  /* Style the purchase form */
-  .purchase-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Style the form labels */
-  .purchase-form label {
-    margin: 10px 0 5px;
-    font-size: 35px; /* Set font size */
-  }
-  
-  /* Style the form select elements */
-  .purchase-form select {
-    padding: 5px;
-    font-size: 20px; /* Set font size */
-    margin-bottom: 10px;
-  }
-  
-  /* Style the quantity counter */
-  .quantity-counter {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .counter-button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 20px; /* Set font size */
-    cursor: pointer;
-    border-radius: 5px; /* Add rounded corners */
-    margin: 0 5px; /* Add some space between buttons and input */
-  }
-  
-  .counter-button:hover {
-    background-color: #777;
-  }
-  
+
+  .purchase-form label,
+  .purchase-form select,
+  .purchase-button,
+  .counter-button,
   #quantity {
-    width: 50px;
-    text-align: center;
-    font-size: 30px; /* Set font size */
-    border: 1px solid #ccc;
-    margin: 0 5px;
-    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
-  
-  /* Style the purchase button */
-  .purchase-button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px; /* Set font size */
-    cursor: pointer;
-    margin-top: 15px;
-    width: 100%; /* Make the button take full width */
-  }
-  
-  .purchase-button:hover {
-    background-color: #777;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media screen and (max-width: 768px) {
-    .purchase-info {
-      flex-basis: 100%; /* Make the flex item take full width */
-      font-size: 16px; /* Adjust font size */
-    }
-  
-    .purchase-form label,
-    .purchase-form select,
-    .purchase-button,
-    .counter-button,
-    #quantity {
-      font-size: 16px; /* Adjust font size for smaller screens */
-    }
-  }
-  
-  /* Style the stream page */
-  .stream-now {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
+}
+
+/* Style the stream page */
+.stream-now {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.stream-info {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  font-size: 2vh; /* Set font size to scale with viewport width */
+  gap:20px;
+} 
+
+.stream-platform {
+  display: flex;
+  border-radius: 25px;
+  border: 2px solid black;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  font-size : 2vh;
+}
+
+
+.stream-info img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
   .stream-info {
-    flex-basis: 45%;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    font-size: 2vh; /* Set font size to scale with viewport width */
-    gap:20px;
-  } 
-  
-  .stream-platform {
-    display: flex;
-    border-radius: 25px;
-    border: 2px solid black;
-    width: 100%;
-    padding: 10px;
-    justify-content: space-between;
-    font-size : 2vh;
+    padding-top:40px;
+    flex-basis: 100%; /* Make the flex item take full width */
+    font-size: 18px; /* Adjust font size for smaller screens */
   }
-  
-  .stream-platform button{
-    background-color: black;
-    color: white;
-    border: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 5px;
-    font-size: 2vh; 
-    cursor: pointer;
-    border-radius: 5px; 
-    align-items: center;
-  }
-  
-  .stream-info img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .stream-info {
-      padding-top:40px;
-      flex-basis: 100%; /* Make the flex item take full width */
-      font-size: 18px; /* Adjust font size for smaller screens */
-    }
-  }
-  
-  /* Style the tour page */
+}
+
+/* Style the tour page */
+.tour-info-container {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  font-size: 2vh; /* Set font size to scale with viewport width */
+  gap:20px;
+} 
+
+.tour-info {
+  display: flex;
+  border-radius: 25px;
+  border: 2px solid black;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  font-size : 2vh;
+}
+
+.tickets-button {
+  display: inline-block;
+  background-color: black; 
+  color: white; 
+  border: none; /* Remove border */
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 10px;
+  font-size: 16px; 
+  font-weight: bold; /* Make text bold */
+  text-transform: uppercase; /* Transform text to uppercase */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add transition for background color */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  line-height: 37px; /* Adjust line-height */
+
+}
+
+.tickets-button:hover {
+  background-color: #777; /* Darken background color on hover */
+}
+
+
+@media screen and (max-width: 768px) {
   .tour-info-container {
-    flex-basis: 45%;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    font-size: 2vh; /* Set font size to scale with viewport width */
-    gap:20px;
-  } 
-  
-  .tour-info {
-    display: flex;
-    border-radius: 25px;
-    border: 2px solid black;
-    width: 100%;
-    padding: 10px;
-    justify-content: space-between;
-    font-size : 2vh;
+    padding-top:40px;
+    flex-basis: 100%; /* Make the flex item take full width */
+    font-size: 18px; /* Adjust font size for smaller screens */
   }
-  
-  .tour-info button{
-    background-color: black;
-    color: white;
-    border: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 5px;
-    font-size: 2vh; 
-    cursor: pointer;
-    border-radius: 5px; 
-    align-items: center;
-    height: 50px;
-  }
-  .tour-info button a {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    border: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 5px;
-    font-size: 2vh; 
-    cursor: pointer;
-    border-radius: 5px; 
-    align-items: center;
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .tour-info-container {
-      padding-top:40px;
-      flex-basis: 100%; /* Make the flex item take full width */
-      font-size: 18px; /* Adjust font size for smaller screens */
-    }
-  }
-  
-  
+}
+
+.stream-platform button{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px; /* Set font size */
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add transition for background color */
+  text-align: center; 
+  text-decoration: none; 
+}
