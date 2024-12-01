@@ -33,3 +33,5 @@ Users can able to use the website to check out the artist's music, puchase merch
 - [Images for Product](https://shop.keshimusic.com/?utm_source=Original&utm_campaign=keshi20240719&utm_medium=direct&utm_referrer=direct&utm_board=island-records-us&utm_country=US&utm_linkurl=keshi.lnk.to%2FShopREQUIEM&lf=dc869417b7d3c19b4be8b680b95e5d77)
 - [Social Media Icons](https://www.figma.com/design/QkNHhBUhmdhwgduVFmz0Js/Social-Media-Icons-(Community)?node-id=17-23&t=u87AovbxQuKCPbIw-1)
 - [Music Video](https://youtu.be/sI97pJcyeOs?si=AP7UtNFp7U0grObu)
+- [Tour](https://www.livenation.asia/keshi-tickets-adp1361676)
+- [Tour Banner](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fkeshi%2Fp%2FC94-YaeOJ-t%2F&psig=AOvVaw2mD4kfClGCZmZgK5lxM0gS&ust=1733130588395000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCMDzsNuchooDFQAAAAAdAAAAABAE)
