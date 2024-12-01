@@ -482,3 +482,112 @@
       order: -1; /* Move the image above the content when in mobile view */
     }
   }
+
+  /* Style the purchase page */
+.purchase-page {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    padding: 20px;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center the content vertically */
+  }
+  
+  /* Style the purchase info sections */
+  .purchase-info {
+    flex-basis: 45%; /* Set the base size for the flex item */
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    font-size: 20px; /* Set font size */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Style the image inside purchase-info */
+  .purchase-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Add some space below the image */
+  }
+  
+  /* Style the purchase form */
+  .purchase-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style the form labels */
+  .purchase-form label {
+    margin: 10px 0 5px;
+    font-size: 35px; /* Set font size */
+  }
+  
+  /* Style the form select elements */
+  .purchase-form select {
+    padding: 5px;
+    font-size: 20px; /* Set font size */
+    margin-bottom: 10px;
+  }
+  
+  /* Style the quantity counter */
+  .quantity-counter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .counter-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px; /* Set font size */
+    cursor: pointer;
+    border-radius: 5px; /* Add rounded corners */
+    margin: 0 5px; /* Add some space between buttons and input */
+  }
+  
+  .counter-button:hover {
+    background-color: #777;
+  }
+  
+  #quantity {
+    width: 50px;
+    text-align: center;
+    font-size: 30px; /* Set font size */
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  /* Style the purchase button */
+  .purchase-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px; /* Set font size */
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%; /* Make the button take full width */
+  }
+  
+  .purchase-button:hover {
+    background-color: #777;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .purchase-info {
+      flex-basis: 100%; /* Make the flex item take full width */
+      font-size: 16px; /* Adjust font size */
+    }
+  
+    .purchase-form label,
+    .purchase-form select,
+    .purchase-button,
+    .counter-button,
+    #quantity {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
