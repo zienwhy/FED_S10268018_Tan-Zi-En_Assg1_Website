@@ -1,3 +1,145 @@
+// Storing the product details and redirecting to the purchase page
+(function () {
+    'use strict';
+  
+    // Function to handle product click and update product details
+    document.addEventListener('DOMContentLoaded', () => {
+      // Select all product links
+      const productLinks = document.querySelectorAll('.product-link');
+  
+      // Add click event listeners to all links
+      productLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent default navigation
+  
+          // Extract product details from data attributes
+          const productData = {
+            title: link.getAttribute('data-title'),
+            price: link.getAttribute('data-price'),
+            description: link.getAttribute('data-description'),
+            image: link.getAttribute('data-image'),
+          };
+  
+          // Store product details in localStorage
+          localStorage.setItem('selectedProduct', JSON.stringify(productData));
+  
+          // Redirect to the product display page
+          window.location.href = 'purchasepage.html';
+        });
+      });
+    });
+  })();
+  
+  //Loading and displaying product details on the purchase page
+  (function () {
+    'use strict';
+  
+    document.addEventListener('DOMContentLoaded', () => {
+      // Check if there's product data in localStorage
+      const productData = JSON.parse(localStorage.getItem('selectedProduct'));
+  
+      if (productData) {
+        // Update product display page
+        document.querySelector('.purchase-page img').src = productData.image;
+        document.querySelector('.purchase-page img').alt = productData.title;
+        document.querySelector('.purchase-page h2').textContent = productData.title;
+        document.querySelector('.purchase-page .title').textContent = productData.price;
+        document.querySelector('.purchase-page p:nth-of-type(2)').textContent = productData.description;
+  
+      } else {
+        console.warn('No product data found in localStorage.');
+      }
+    });
+  })();
+  
+  //Function to remove the size option if the product is not a clothing item
+  function updateSizeOptionBasedOnTitle() {
+    // Get the product title
+    const productTitleElement = document.querySelector('.purchase-info h2');
+    const sizeField = document.getElementById('size'); // Size dropdown
+    const sizeLabel = document.querySelector('label[for="size"]'); // Size label
+  
+    if (!productTitleElement) {
+      console.error('Product title not found!');
+      return;
+    }
+  
+    const productTitle = productTitleElement.textContent.toLowerCase();
+  
+    // Check if the product title includes "tee" or "longsleeve"
+    if (productTitle.includes('tee') || productTitle.includes('longsleeve')) {
+      // Show size field if it's a tee or longsleeve
+      sizeField.style.display = 'block';
+      sizeLabel.style.display = 'block';
+    } else {
+      // Hide size field and label if it's not a tee or longsleeve
+      sizeField.style.display = 'none';
+      sizeLabel.style.display = 'none';
+    }
+  }
+  
+  // Call the function when the page loads
+  document.addEventListener('DOMContentLoaded', () => {
+    updateSizeOptionBasedOnTitle();
+  });
+  
+  
+  //Function for counter in the purchase page to increase or decrease the quantity. Caps the quantity at 5
+  (function () {
+    'use strict';
+  
+    // Class to control quantity increment and decrement
+    class QuantityController {
+      constructor(incrementId, decrementId, quantityId) {
+        // Select elements
+        this.incrementButton = document.querySelector(`#${incrementId}`);
+        this.decrementButton = document.querySelector(`#${decrementId}`);
+        this.quantityInput = document.querySelector(`#${quantityId}`);
+  
+        // Validate elements
+        if (!this.incrementButton || !this.decrementButton || !this.quantityInput) {
+          console.error(
+            'One or more elements are missing: increment, decrement, quantity'
+          );
+          return;
+        }
+  
+        console.log('Elements initialized:', this.incrementButton, this.decrementButton, this.quantityInput);
+  
+        // Define constants
+        this.maxQuantity = 5;
+        this.minQuantity = 1;
+  
+        // Add event listeners
+        this.incrementButton.addEventListener('click', () => {
+          this.changeQuantity(1);
+        });
+  
+        this.decrementButton.addEventListener('click', () => {
+          this.changeQuantity(-1);
+        });
+      }
+  
+      // Function to change quantity
+      changeQuantity(change) {
+        const currentValue = parseInt(this.quantityInput.value, 10) || this.minQuantity;
+        const newValue = currentValue + change;
+  
+        if (newValue >= this.minQuantity && newValue <= this.maxQuantity) {
+          this.quantityInput.value = newValue;
+          console.log(`Quantity updated to: ${newValue}`);
+        } else {
+          console.warn('Quantity change out of bounds:', newValue);
+        }
+      }
+    }
+  
+    // Initialize the QuantityController
+    document.addEventListener('DOMContentLoaded', () => {
+      new QuantityController('increment', 'decrement', 'quantity');
+    });
+  })();
+  
 //Function for the index page sliders to shift slides left and right and make it responsive
 (function () {
     'use strict';

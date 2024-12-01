@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PurchasePage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Start of header -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo"><a href="#"><img src="Images/keshi-logo.webp" alt="Company Logo"></a></div>
+      <!-- Hamburger menu icon for mobile view -->
+      <img src="Images/hamburger.png" alt="Menu Icon" class="menu-icon" id="menu-icon" onclick="showSidebar()">
+      <!-- Sidebar menu for mobile view -->
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <!-- Close icon for sidebar -->
+          <li onclick="hideSidebar()"><a href="#"><img src="Images/close.png" class="close-menu" alt="Close Icon"></a></li>
+          <!-- Navigation links -->
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="music.html">MUSIC</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="tours.html">TOURS</a></li>
+          <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+        </ul>
+      </div>
+      <!-- Navigation links for desktop view -->
+      <div class="navdiv" id="navdiv">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="music.html">MUSIC</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="tours.html">TOURS</a></li>
+          <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End of header -->
+
+  <main>
+  <!-- Start of purchase section -->
+  <section class="purchase-page"> 
+    <div class="purchase-info">
+      <!-- Dynamic Product Image -->
+      <img id="product-image" src="Images/default-placeholder.png" alt="Product Image">
+    </div>
+    <div class="purchase-info">
+      <!-- Dynamic Product Title -->
+      <h2 id="product-title">Product Title</h2>
+      <!-- Dynamic Product Price -->
+      <p class="title" id="product-price">$0.00</p>
+      <!-- Dynamic Product Description -->
+      <p id="product-description">Product description will appear here.</p>
+      <!-- Purchase form -->
+      <form class="purchase-form">
+        <!-- Quantity selection -->
+        <label for="quantity">Quantity:</label>
+        <div class="quantity-counter">
+          <button type="button" class="counter-button" id="decrement">-</button>
+          <input type="text" id="quantity" name="quantity" value="1" readonly>
+          <button type="button" class="counter-button" id="increment">+</button>
+        </div>
+        
+        <!-- Size selection (this will be dynamically shown or hidden) -->
+        <label for="size" id="size-label">Size:</label>
+        <select id="size" name="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="xl">XL</option>
+        </select>
+        
+        <!-- Buy Now button -->
+        <button class="purchase-button" type="submit">Buy Now</button>
+      </form>
+    </div>
+  </section>
+  </main>
+  <!-- End of purchase section -->
+
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© Front End Development - Wireframe</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End of footer -->
+
+
+  <script defer src="script.js"></script>
+</body>
+</html>

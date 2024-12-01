@@ -381,3 +381,75 @@
       font-size: 24px; /* Adjust font size for smaller screens */
     }
   }
+
+/* Style the row to use flexbox */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    margin: 0 -8px; /* Adjust margin to compensate for padding */
+  }
+  
+  /* Style the columns */
+  .column {
+    margin-top: 8px;
+    flex: 1; /* Allow columns to grow and take available space */
+    max-width: 33.3%; /* Set the maximum width for each column */
+    padding: 0 8px; /* Add padding inside the columns */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-bottom: 8px; /* Add some space below each column */
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 768px) {
+    .column {
+      max-width: 100%;
+      flex: 100%;
+      margin-top: 50px;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    border: 1px solid black; /* Add a black border to each box */
+  }
+  
+  /* Some left and right padding inside the container */
+  .info-container {
+    padding: 0 16px;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  .product-image img{
+    width: 100%;
+  }
+  
+  .product-price {
+    color: grey;
+  }
+  
+  .info-container button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .info-container button a {
+    text-decoration: none;
+  }
+  
+  .info-container button:hover {
+    background-color: #777;
+  }
+  
+  .cover-image img {
+    height: auto;
+    width: 100%;
+    margin-top: 35px;
+  }
