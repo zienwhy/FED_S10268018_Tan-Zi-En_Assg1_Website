@@ -58,9 +58,11 @@
       }
     });
   })();
-
-// Storing the product details and redirecting to the purchase page
-(function () {
+  
+  
+  // Function for shop.html and tour.html to change the product details dynamically
+  // Storing the product details and redirecting to the purchase page
+  (function () {
     'use strict';
   
     // Function to handle product click and update product details
@@ -200,9 +202,9 @@
       new QuantityController('increment', 'decrement', 'quantity');
     });
   })();
-
-//Function for the index page sliders to shift slides left and right and make it responsive
-(function () {
+  
+  //Function for the index page sliders to shift slides left and right and make it responsive
+  (function () {
     'use strict';
   
     // A class for building sliders from it
@@ -314,3 +316,17 @@
     // Create a new slider and run it
     new Slider('featured-products', [576, 768, 992]).run();
   })();
+  
+  
+  // Function to show and hide the sidebar
+  function showSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+  }
+  
+  
+  

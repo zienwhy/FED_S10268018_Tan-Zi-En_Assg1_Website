@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourPage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start of header -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo"><a href="#"><img src="Images/keshi-logo.webp" alt="Company Logo"></a></div>
+            <!-- Hamburger menu icon for mobile view -->
+            <img src="Images/hamburger.png" alt="Menu Icon" class="menu-icon" id="menu-icon" onclick="showSidebar()">
+            <!-- Sidebar menu for mobile view -->
+            <div class="sidebar" id="sidebar">
+                <ul>
+                    <!-- Close icon for sidebar -->
+                    <li onclick="hideSidebar()"><a href="#"><img src="Images/close.png" class="close-menu" alt="Close Icon"></a></li>
+                    <!-- Navigation links -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="music.html">MUSIC</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="tours.html">TOURS</a></li>
+                    <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+                </ul>
+            </div>
+            <!-- Navigation links for desktop view -->
+            <div class="navdiv" id="navdiv">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="music.html">MUSIC</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="tours.html">TOURS</a></li>
+                    <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- End of header -->
+
+    <!-- Start of Main content -->
+    <main>
+        <!-- Tour information section -->
+        <section class="tour-info-container">
+            <!-- Tour info item 1 -->
+            <div class="tour-info">
+                <p>FEB 19, 2025</p>
+                <p>YOKOHAMA, JAPAN, PIA Arena MM</p>
+                <!-- Link to purchase page with relevant data attributes -->
+                <a href="purchasepage.html" 
+                   class="product-link" 
+                   data-title="KESHI REQUIEM WORLD TOUR 2025 [YOKOHAMA]" 
+                   data-price="$68.00" 
+                   data-description="Tickets are free seating. Up to 5 tickets per transaction." 
+                   data-image="Images/tour-poster.jpg">
+                    <button type="button">TICKETS</button>
+                </a>
+            </div>
+            <!-- Tour info item 2 -->
+            <div class="tour-info">
+                <p>FEB 21, 2025</p>
+                <p>HONG KONG, ASIAWORLD-ARENA</p>
+                <a href="purchasepage.html" 
+                   class="product-link" 
+                   data-title="KESHI REQUIEM WORLD TOUR 2025 [HONG KONG]" 
+                   data-price="$68.00" 
+                   data-description="Tickets are free seating. Up to 5 tickets per transaction." 
+                   data-image="Images/tour-poster.jpg">
+                    <button type="button">TICKETS</button>
+                </a>
+            </div>
+            <!-- Tour info item 3 -->
+            <div class="tour-info">
+                <p>FEB 24, 2025</p>
+                <p>JAKARTA, INDONESIA, ISTORA SENANYA</p>
+                <a href="purchasepage.html" 
+                   class="product-link" 
+                   data-title="KESHI REQUIEM WORLD TOUR 2025 [JAKARTA]" 
+                   data-price="$68.00" 
+                   data-description="Tickets are free seating. Up to 5 tickets per transaction." 
+                   data-image="Images/tour-poster.jpg">
+                    <button type="button">TICKETS</button>
+                </a>
+            </div>
+            <!-- Tour info item 4 -->
+            <div class="tour-info">
+                <p>FEB 24, 2025</p>
+                <p>KUALA LUMPUR, MALAYSIA, AXIATA ARENA</p>
+                <a href="purchasepage.html" 
+                   class="product-link" 
+                   data-title="KESHI REQUIEM WORLD TOUR 2025 [KUALA LUMPUR]" 
+                   data-price="$68.00" 
+                   data-description="Tickets are free seating. Up to 5 tickets per transaction." 
+                   data-image="Images/tour-poster.jpg">
+                    <button type="button">TICKETS</button>
+                </a>
+            </div>
+            <!-- Tour info item 5 -->
+            <div class="tour-info">
+                <p>MARCH 01, 2025</p>
+                <p>SEOUL, KOREA, OLYMPIC HALL</p>
+                <a href="purchasepage.html" 
+                   class="product-link" 
+                   data-title="KESHI REQUIEM WORLD TOUR 2025 [SEOUL]" 
+                   data-price="$68.00" 
+                   data-description="Tickets are free seating. Up to 5 tickets per transaction." 
+                   data-image="Images/tour-poster.jpg">
+                    <button type="button">TICKETS</button>
+                </a>
+            </div>
+            <!-- Tour info item 6 -->
+            <div class="tour-info">
+                <p>MARCH 04, 2025</p>
+                <p>PASAY, PHILIPPINES, SM MALL OF ASIA ARENA</p>
+                <a href="purchasepage.html" 
+                   class="product-link" 
+                   data-title="KESHI REQUIEM WORLD TOUR 2025 [PASAY]" 
+                   data-price="$68.00" 
+                   data-description="Tickets are free seating. Up to 5 tickets per transaction." 
+                   data-image="Images/tour-poster.jpg">
+                    <button type="button">TICKETS</button>
+                </a>
+            </div>
+            <!-- Tour info item 7 -->
+            <div class="tour-info">
+                <p>MARCH 26, 2025</p>
+                <p>SINGAPORE, SINGAPORE INDOOR STADIUM</p>
+                <a href="purchasepage.html" 
+                   class="product-link" 
+                   data-title="KESHI REQUIEM WORLD TOUR 2025 [SINGAPORE]" 
+                   data-price="$68.00" 
+                   data-description="Tickets are free seating. Up to 5 tickets per transaction." 
+                   data-image="Images/tour-poster.jpg">
+                    <button type="button">TICKETS</button>
+                </a>
+            </div>
+            <!-- Tour info item 8 -->
+            <div class="tour-info">
+                <p>MARCH 29, 2025</p>
+                <p>TAIPEI, TAIWAN, 國立體育大學綜合體育館 (林口體育館)</p>
+                <a href="purchasepage.html" 
+                   class="product-link" 
+                   data-title="KESHI REQUIEM WORLD TOUR 2025 [TAIPEI]" 
+                   data-price="$68.00" 
+                   data-description="Tickets are free seating. Up to 5 tickets per transaction." 
+                   data-image="Images/tour-poster.jpg">
+                    <button type="button">TICKETS</button>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- End of Main content -->
+
+    <!-- Start of Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© Front End Development - Wireframe</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="spotify-icon.png" alt="Spotify"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
