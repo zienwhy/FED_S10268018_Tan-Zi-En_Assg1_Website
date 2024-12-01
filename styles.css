@@ -1,0 +1,383 @@
+/* Apply a global font style and weight to all elements */
+* {
+    font-family: 'Quattrocento', serif;
+    font-weight: bold;
+  }
+  
+  /* Style the Navigation Bar */
+  /* General reset for text decoration in navigation links */
+  .nav a {
+    text-decoration: none;
+  }
+  
+  /* Style the logo container */
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo */
+  }
+  
+  /* Style the logo image */
+  .logo img {
+    align-items: center;
+    margin-bottom: 10px; 
+    width: 100px; 
+    height: auto;
+    display: block;
+  }
+  
+  /* Style the navigation container */
+  .navdiv {
+    background-color: black; 
+    list-style-type: none; /* Remove default list styles */
+    text-align: center; 
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    justify-content: center; /* Center the nav items */
+    align-items: center; 
+  }
+  
+  
+  
+  /* Style the navigation list */
+  .navdiv ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute space between list items */
+    width: 100%; 
+  }
+  
+  /* Style the navigation list items */
+  .navdiv li {
+    color: white; 
+    display: inline-block; /* Display items inline */
+    font-size: 20px; /* Set font size */
+    padding: 20px; 
+  }
+  
+  /* Style the navigation links */
+  .navdiv li a {
+    color: white;
+    text-decoration: none; /* Ensure no text decoration */
+    padding: 14px 16px; /* Add padding to the links for decoration*/
+    background-color: black; 
+  }
+  
+  /* Add hover effect to the navigation links */
+  .navdiv li a:hover {
+    background-color: #777; /* Darken the background color on hover */
+  }
+  
+  .menu-icon{
+    display: none; /* Hide the menu icon by default */
+    top : 0; /* Position the icon at the top right*/
+    right : 0;
+    position: fixed; /* Fix the icon in place to create a sticky navbar */
+    height: 37.656px;
+    width: auto;
+    margin-right:10px;
+    margin-top: 10px;
+    z-index: 998; /* Ensure the icon stays above other content */
+  }
+  
+  .sidebar{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: black;
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .sidebar li {
+    list-style-type: none; 
+    width: 100%;
+    margin-bottom: 15px; /* Add space between items */
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    width: 100%;
+    color: white; 
+    font-size: 18px; 
+    padding: 10px 15px; 
+    display: block; /* Make the links block elements */
+  }
+  
+  .sidebar a:hover {
+    background-color: #777; /* Light gray background on hover */
+  }
+  
+  /* Style the music video section */
+  .music-video {
+    background-color: white;
+    text-align: center; 
+    display: flex;
+    flex-direction: column; /* Ensure the content is stacked vertically */
+    align-items: center; /* Center the content horizontally */
+  }
+  
+  .music-video h2 {
+    font-size: 28px; 
+    margin-bottom: 20px; 
+  }
+  
+  .music-video iframe{
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  
+  /* Style the latest album section */
+  .latest-album {
+    align-content: space-evenly;
+    background-image: url('Images/keshi-bg.png'); /* Background image */ 
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */  
+    width: auto;
+    height: 100%;
+    color: white;
+    padding: 40px 20px; 
+    text-align: center; 
+  }
+  
+  
+  .latest-album h2 {
+    font-size: 28px; 
+    margin-bottom: 20px; 
+  }
+  
+  .latest-album p {
+    font-size: 18px; 
+    margin-bottom: 20px; 
+  }
+  
+  .latest-album button {
+    background-color: #ff6347; 
+    color: white; 
+    border: none; /* Remove border */
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; /* Make text bold */
+    text-transform: uppercase; /* Transform text to uppercase */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Add transition for background color */
+  }
+  
+  .latest-album button:hover {
+    background-color: #ff4500; /* Change background color on hover */
+  }
+  
+  /* Style the arrival section */
+  .arrival-container {
+    max-width: 1170px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  
+  .product-container {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  
+  .slider-wrapper {
+    margin: auto; 
+    overflow: hidden; /* Hide the overflowing content */
+  }
+  
+  .slider-container {
+    padding: 0 10px;
+  }
+  
+  .slider-container a {
+    text-decoration: none;
+    color : black;
+  }
+  
+  .product-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+    max-height: calc(100vh - 80px);
+  }
+  
+  .product {
+    background-color: white;
+    margin: 0 16px -4px 0;
+    min-height: 150px;
+  }
+  
+  .product p {
+    margin-top: 0;
+  }
+  
+  .product img {
+    width: 100%;
+  }
+  
+  .slider-arrows {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    padding: 0 10px;
+    margin-top: 10px;
+    position: absolute; /* Position the arrows relative to the slider */
+    top: 40%;
+    transform: translateY(-50%); /* Center the arrows vertically */
+    width: 100%;
+    pointer-events: none; /* Allows clicks to pass through */
+  }
+  
+  .slider-arrow-prev,
+  .slider-arrow-next {
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: auto; /* Enables clicks on buttons */
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    cursor: pointer; 
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .slider-arrow-prev:hover,
+  .slider-arrow-next:hover {
+    background-color: #424141;
+  }
+  
+  
+  .slider-arrow-prev img,
+  .slider-arrow-next img {
+    width: 100%; 
+    height: auto;
+  }
+  
+  /* Style the shop button */
+  .index-shop {
+    background-color: #ff6347; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; /* Add transition for background color */
+    margin-bottom: 20px; 
+  }
+  
+  .music-shop:hover {
+    background-color: #ff4500; 
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    justify-content: center; 
+  }
+  
+  .footer-links li {
+    display: inline; 
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  .social-media a img {
+    width: 24px; /* Adjust the size of the social media icons */
+    height: 24px;
+  }
+  
+  .social-media a:hover img {
+    opacity: 0.7; /* Add a hover effect to the social media icons */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-media {
+      justify-content: center;
+    }
+    .footer-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  
+    .navdiv li {
+      display: none; /* Hide the navigation links */
+    }
+    .menu-icon {
+      display: block; /* Display the menu icon */
+    }
+    .logo {
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      top: 0;
+      z-index: 998; /* Ensure it stays above other content */
+    }
+    .music-video {
+      padding-top: 25px; /* Adjust padding to account for fixed navigation */
+    }
+    .music-video h2 {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  }
