@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeshiMusic</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World</h1>
+  <!-- Start of header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="#"><img src="keshi-logo.webp" alt="Company Logo"></a></div>
+      <div class="navdiv" id="navdiv">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">MUSIC</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">TOURS</a></li>
+          <li><a href="#">ABOUT KESHI</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End of header -->
+  <main>
+    <!--Start of Music Video Section-->
+    <section class="music-video">
+      <h2>Watch Keshi's latest music video here!</h2>
+      <video controls class="latest-video" src="placeholder-video.mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section class = "latest-album">
+      <img src="Images/requiem.png" alt="Background Image" class="background-image">
+      <h2>Keshi's latest album, "REQUIEM" is out now!</h2>
+      <p>Listen to the album on Spotify, Apple Music, and more!</p>
+      <button type="button">Stream Now!</button>
+    </section>
+    <!--End of Music Video Section-->
+    <!--Start of New Arrival Section-->
+    <section class="new-arrival">
+      <h2 class="new-arrival-header">NEW ARRIVAL</h2>
+      <button class="pre-btn"><img src="Images/arrow.png" alt=""></button>
+      <button class="nxt-btn"><img src="Images/arrow.png" alt=""></button>
+      <div class="arrival-carousel-1">
+        <div class="arrival-frame">
+          <img src="requiem.png" class="arrival-png" alt="">
+          <p class="item-name">Requiem</p>
+        </div>
+        <div class="arrival-frame">
+          <img src="requiem.png" class="arrival-png" alt="">
+          <p class="item-name">Requiem</p>
+        </div>
+        <div class="arrival-frame">
+          <img src="requiem.png" class="arrival-png" alt="">
+          <p class="item-name">Requiem</p>
+        </div>
+      </div>
+    </section>
+    <!--End of New Arrival Section-->
+    <!--Start of Footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© Front End Development - Wireframe</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="#"><img src="spotify-icon.png" alt="Spotify"></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        </div>
+      </div>
+    </footer>
+    <!--End of Footer-->
+    
+    
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
