@@ -1,3 +1,64 @@
+
+// Function for music.html to change the song details dynamically
+//Storing the song details and redirecting to the stream now page
+(function () {
+    'use strict';
+  
+    // Function to handle stream button click and update song details
+    document.addEventListener('DOMContentLoaded', () => {
+      // Select all stream buttons
+      const streamButtons = document.querySelectorAll('.button');
+  
+      // Add click event listeners to all buttons
+      streamButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent default button behavior
+  
+          // Extract song details from data attributes
+          const songData = {
+            title: button.getAttribute('data-title'),
+            image: button.getAttribute('data-image'),
+          };
+  
+          // Store song details in localStorage
+          localStorage.setItem('selectedSong', JSON.stringify(songData));
+  
+          // Redirect to the stream now page
+          window.location.href = 'streamnowpage.html';
+        });
+      });
+    });
+  })();
+  
+  // Function to load and display song details
+  (function () {
+    'use strict';
+  
+    // Function to load and display song details on the page
+    document.addEventListener('DOMContentLoaded', () => {
+      // Retrieve song data from localStorage
+      const songData = JSON.parse(localStorage.getItem('selectedSong'));
+  
+      if (songData) {
+        // Update the song image, alt text, and title on the page
+        const songImageElement = document.querySelector('.song-image');
+        const songTitleElement = document.querySelector('.song-title');
+  
+        if (songImageElement) {
+          songImageElement.src = songData.image;
+          songImageElement.alt = songData.title;
+        }
+  
+        if (songTitleElement) {
+          songTitleElement.textContent = `Stream "${songData.title}" now!`;
+        }
+      } else {
+        // Log a warning if no song data is found in localStorage
+        console.warn('No song data found in localStorage.');
+      }
+    });
+  })();
+
 // Storing the product details and redirecting to the purchase page
 (function () {
     'use strict';
@@ -139,7 +200,7 @@
       new QuantityController('increment', 'decrement', 'quantity');
     });
   })();
-  
+
 //Function for the index page sliders to shift slides left and right and make it responsive
 (function () {
     'use strict';

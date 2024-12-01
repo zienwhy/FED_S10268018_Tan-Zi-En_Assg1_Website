@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicPage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Start of header -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo"><a href="#"><img src="Images/keshi-logo.webp" alt="Company Logo"></a></div>
+      <!-- Hamburger menu icon for mobile view -->
+      <img src="Images/hamburger.png" alt="Menu Icon" class="menu-icon" id="menu-icon" onclick="showSidebar()">
+      <!-- Sidebar menu for mobile view -->
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <!-- Close icon for sidebar -->
+          <li onclick="hideSidebar()"><a href="#"><img src="Images/close.png" class="close-menu" alt="Close Icon"></a></li>
+          <!-- Navigation links -->
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="music.html">MUSIC</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="tours.html">TOURS</a></li>
+          <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+        </ul>
+      </div>
+      <!-- Navigation links for desktop view -->
+      <div class="navdiv" id="navdiv">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="music.html">MUSIC</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="tours.html">TOURS</a></li>
+          <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End of header -->
+
+<main>
+  <!-- Start of first row of music cards -->
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="cover-image"><img src="Images/keshi-compressed-1024x1024.jpg" alt="REQUIEM Album Cover"></div>
+        <div class="info-container">
+          <h2>REQUIEM</h2>
+          <a href="streamnowpage.html"><p><button class="button" data-title="REQUIEM" data-image="Images/keshi-compressed-1024x1024.jpg">STREAM NOW</button></p></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div class="cover-image"><img src="Images/gabriel.jpg" alt="GABRIEL Album Cover"></div>
+        <div class="info-container">
+          <h2>GABRIEL</h2>
+          <p><button class="button" data-title="GABRIEL" data-image="Images/gabriel.jpg">STREAM NOW</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div class="cover-image"><img src="Images/beside-you.jpg" alt="BESIDE YOU Album Cover"></div>
+        <div class="info-container">
+          <h2>BESIDE YOU</h2>
+          <p><button class="button" data-title="BESIDE YOU" data-image="Images/beside-you.jpg">STREAM NOW</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of first row of music cards -->
+  
+  <!-- Start of second row of music cards -->
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="product-image"><img src="Images/always.jpg" alt="ALWAYS Album Cover"></div>
+        <div class="info-container">
+          <h2>ALWAYS</h2>
+          <p><button class="button" data-title="ALWAYS" data-image="Images/always.jpg">STREAM NOW</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div class="product-image"><img src="Images/thereaper.jpg" alt="THE REAPER Album Cover"></div>
+        <div class="info-container">
+          <h2>THE REAPER</h2>
+          <p><button class="button" data-title="THE REAPER" data-image="Images/thereaper.jpg">STREAM NOW</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div class="product-image"><img src="Images/skeletons.jpg" alt="SKELETONS Album Cover"></div>
+        <div class="info-container">
+          <h2>SKELETONS</h2>
+          <p><button class="button" data-title="SKELETONS" data-image="Images/skeletons.jpg">STREAM NOW</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of second row of music cards -->
+</main>
+  
+  <!-- Start of Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© Front End Development - Wireframe</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="spotify-icon.png" alt="Spotify"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
