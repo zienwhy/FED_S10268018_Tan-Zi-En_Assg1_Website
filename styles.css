@@ -591,3 +591,55 @@
       font-size: 16px; /* Adjust font size for smaller screens */
     }
   }
+
+  /* Style the stream page */
+.stream-now {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .stream-info {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    font-size: 2vh; /* Set font size to scale with viewport width */
+    gap:20px;
+  } 
+  
+  .stream-platform {
+    display: flex;
+    border-radius: 25px;
+    border: 2px solid black;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    font-size : 2vh;
+  }
+  
+  .stream-platform button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 5px;
+    font-size: 2vh; 
+    cursor: pointer;
+    border-radius: 5px; 
+    align-items: center;
+  }
+  
+  .stream-info img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .stream-info {
+      padding-top:40px;
+      flex-basis: 100%; /* Make the flex item take full width */
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  }

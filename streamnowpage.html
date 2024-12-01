@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamingPage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start of header -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo"><a href="#"><img src="Images/keshi-logo.webp" alt="Company Logo"></a></div>
+      <!-- Hamburger menu icon for mobile view -->
+      <img src="Images/hamburger.png" alt="Menu Icon" class="menu-icon" id="menu-icon" onclick="showSidebar()">
+      <!-- Sidebar menu for mobile view -->
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <!-- Close icon for sidebar -->
+          <li onclick="hideSidebar()"><a href="#"><img src="Images/close.png" class="close-menu" alt="Close Icon"></a></li>
+          <!-- Navigation links -->
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="music.html">MUSIC</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="tours.html">TOURS</a></li>
+          <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+        </ul>
+      </div>
+      <!-- Navigation links for desktop view -->
+      <div class="navdiv" id="navdiv">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="music.html">MUSIC</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="tours.html">TOURS</a></li>
+          <li><a href="about-keshi.html">ABOUT KESHI</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- End of header -->
+
+  <main>
+  <!-- Start of stream now section -->
+  <section class="stream-now">
+    <div class="stream-info">
+      <!-- Dynamic Song Image -->
+      <img class="song-image" src="" alt="">
+    </div>
+    <div class="stream-info">
+      <!-- Dynamic Song Title -->
+      <h2 class="song-title"></h2>
+      <!-- Streaming platforms -->
+      <div class="stream-platform">
+        <p>Listen on Spotify</p>
+        <button type="button">Play</button>
+      </div>
+      <div class="stream-platform">
+        <p>Listen on Apple Music</p>
+        <button type="button">Play</button>
+      </div>
+      <div class="stream-platform">
+        <p>Listen on YouTube Music</p>
+        <button type="button">Play</button>
+      </div>
+      <div class="stream-platform">
+        <p>Listen on iTunes</p>
+        <button type="button">Play</button>
+      </div>
+    </div>
+  </section>
+  </main>
+  <!-- End of stream now section -->
+
+  <!-- Start of Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© Front End Development - Wireframe</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="spotify-icon.png" alt="Spotify"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
